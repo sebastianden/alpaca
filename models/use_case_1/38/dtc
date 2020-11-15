@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<$pos^5_{max}$ &le; 95.554<br/>entropy = 1.971<br/>samples = 3287<br/>value = [664, 944, 657, 1022]<br/>class = 3>] ;
+1 [label=<$pos^4_{std}$ &le; 13.985<br/>entropy = 0.971<br/>samples = 1663<br/>value = [664, 0, 0, 999]<br/>class = 3>] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<$pos^4_{mean}$ &le; 111.673<br/>entropy = 0.331<br/>samples = 707<br/>value = [664, 0, 0, 43]<br/>class = 0>] ;
+1 -> 2 ;
+3 [label=<$cur^4_{max}$ &le; 5231.432<br/>entropy = 0.205<br/>samples = 686<br/>value = [664, 0, 0, 22]<br/>class = 0>] ;
+2 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 641<br/>value = [641, 0, 0, 0]<br/>class = 0>] ;
+3 -> 4 ;
+5 [label=<$pos^4_{std}$ &le; 12.871<br/>entropy = 1.0<br/>samples = 45<br/>value = [23, 0, 0, 22]<br/>class = 0>] ;
+3 -> 5 ;
+6 [label=<entropy = 0.25<br/>samples = 24<br/>value = [23, 0, 0, 1]<br/>class = 0>] ;
+5 -> 6 ;
+7 [label=<entropy = 0.0<br/>samples = 21<br/>value = [0, 0, 0, 21]<br/>class = 3>] ;
+5 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 21<br/>value = [0, 0, 0, 21]<br/>class = 3>] ;
+2 -> 8 ;
+9 [label=<entropy = 0.0<br/>samples = 956<br/>value = [0, 0, 0, 956]<br/>class = 3>] ;
+1 -> 9 ;
+10 [label=<$cur^4_{std}$ &le; 732.12<br/>entropy = 1.07<br/>samples = 1624<br/>value = [0, 944, 657, 23]<br/>class = 1>] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label=<entropy = 0.0<br/>samples = 944<br/>value = [0, 944, 0, 0]<br/>class = 1>] ;
+10 -> 11 ;
+12 [label=<$pos^3_{max}$ &le; 129.932<br/>entropy = 0.213<br/>samples = 680<br/>value = [0, 0, 657, 23]<br/>class = 2>] ;
+10 -> 12 ;
+13 [label=<entropy = 0.0<br/>samples = 657<br/>value = [0, 0, 657, 0]<br/>class = 2>] ;
+12 -> 13 ;
+14 [label=<entropy = 0.0<br/>samples = 23<br/>value = [0, 0, 0, 23]<br/>class = 3>] ;
+12 -> 14 ;
+}
